@@ -1,66 +1,66 @@
-# Student Performance Analysis and Prediction Dashboard
+#**🎓 Student Performance ML Dashboard**
 
-<img width="1364" height="1404" alt="image" src="https://github.com/user-attachments/assets/0be912b6-372a-4a8c-97e8-0a766e327d22" />
+<img width="1298" height="1249" alt="image" src="https://github.com/user-attachments/assets/567676a0-4529-49bb-b0c9-194c5906b413" />
 
-# 🎓 Student Performance Analysis & Prediction Dashboard
+<img width="1173" height="1373" alt="image" src="https://github.com/user-attachments/assets/02306b85-1831-4d70-a907-d2ce3882bcd9" />
 
-An end-to-end **Data Science project** that analyzes student exam performance and predicts student outcomes using **Python, SQL, Machine Learning, and an interactive dashboard**.
 
-This project demonstrates the complete **data science workflow** including data analysis, database integration, machine learning model training, and deployment through a web dashboard.
+
+# 🎓 Student Performance ML Dashboard
+
+An end-to-end **Data Science and Machine Learning project** that analyzes student exam data and predicts student performance using **Python, SQL, and Machine Learning**, with an **interactive Streamlit dashboard**.
 
 ---
 
 # 📊 Project Overview
 
-Understanding the factors that influence student performance is important in education analytics.
+This project explores a dataset of student exam results and builds a **machine learning model** to predict whether a student will perform well based on their scores.
 
-This project analyzes student exam performance using a dataset from Kaggle and builds a **machine learning model to predict student performance** based on key attributes such as gender, lunch type, and test preparation.
+The project demonstrates a full **data science pipeline**:
 
-The project also includes an **interactive Streamlit dashboard** where users can input student characteristics and receive real-time predictions.
+Dataset → Data Analysis → SQL Database → Machine Learning Model → Interactive Dashboard
 
 ---
 
-# 🚀 Features
+# 🚀 Key Features
 
 * Data analysis using **Pandas**
-* Data stored and accessed using **SQLite database**
+* Data stored and accessed using **SQLite**
 * Data visualization using **Matplotlib**
-* Machine Learning model built with **Scikit-Learn**
-* Interactive dashboard using **Streamlit**
-* End-to-end ML workflow implementation
+* Machine Learning model using **Logistic Regression**
+* Interactive dashboard built with **Streamlit**
+* Real dataset from **Kaggle**
 
 ---
 
 # 🧠 Machine Learning Model
 
-**Algorithm Used:** Logistic Regression
+**Algorithm:** Logistic Regression
 
-The model predicts whether a student will have:
+The model predicts whether a student's performance is:
 
-* ✅ **Good Performance**
-* ⚠️ **Poor Performance**
+* ✅ Good Performance
+* ⚠️ Poor Performance
 
 ### Features Used
 
-* Gender
-* Lunch Type
-* Test Preparation Course
+* Math Score
+* Reading Score
+* Writing Score
 
 ### Target Variable
 
-Student performance calculated using the **average exam score**.
+Student performance calculated from the **average score** of the three exams.
 
 ---
 
 # 📂 Dataset
 
-Dataset used: **Students Performance in Exams**
+Dataset: **Students Performance in Exams**
 
 Source: Kaggle
 
-It contains information about student demographics and exam scores.
-
-Columns include:
+The dataset includes:
 
 * Gender
 * Parental Level of Education
@@ -74,29 +74,32 @@ Columns include:
 
 # 📈 Data Analysis
 
-Exploratory Data Analysis was performed to identify patterns and insights such as:
+Exploratory Data Analysis (EDA) was performed to understand patterns in student performance.
 
-* Score distribution across students
-* Impact of test preparation on performance
-* Gender-based performance comparison
+Examples of insights explored:
+
+* Distribution of exam scores
+* Average performance across subjects
+* Relationship between different exam scores
 
 Visualizations were created using **Matplotlib**.
 
 ---
 
-# 🌐 Dashboard
+# 🌐 Interactive Dashboard
 
-An interactive dashboard built with **Streamlit** allows users to:
+The project includes a **Streamlit dashboard** where users can input exam scores and receive a prediction from the trained ML model.
 
-1. Select student characteristics
-2. Submit the information
-3. Receive a prediction from the trained ML model
+### Dashboard Capabilities
+
+* View dataset summary
+* Explore score distributions
+* Enter student scores
+* Get real-time ML predictions
 
 Run the dashboard with:
 
-```
 streamlit run dashboard.py
-```
 
 ---
 
@@ -104,51 +107,40 @@ streamlit run dashboard.py
 
 Clone the repository:
 
-```
 git clone https://github.com/Gravilaration/student-performance-ml-dashboard.git
-```
 
 Navigate to the project folder:
 
-```
 cd student-performance-ml-dashboard
-```
 
 Install dependencies:
 
-```
 pip install -r requirements.txt
-```
 
 Run the dashboard:
 
-```
 streamlit run dashboard.py
-```
 
 ---
 
 # 📁 Project Structure
 
-```
 student-performance-ml-dashboard
-│
-├── data
-│   └── StudentsPerformance.csv
-│
-├── database
-│   └── students.db
-│
-├── models
-│   └── student_model.pkl
-│
-├── analysis.py
-├── train_model.py
-├── dashboard.py
-│
-├── requirements.txt
-└── README.md
-```
+
+data/
+StudentsPerformance.csv
+
+database/
+students.db
+
+models/
+student_model.pkl
+
+analysis.py
+train_model.py
+dashboard.py
+requirements.txt
+README.md
 
 ---
 
@@ -164,7 +156,7 @@ student-performance-ml-dashboard
 
 ---
 
-# 🎯 Learning Outcomes
+# 🎯 Skills Demonstrated
 
 This project demonstrates practical skills in:
 
@@ -173,7 +165,7 @@ This project demonstrates practical skills in:
 * SQL Database Integration
 * Machine Learning Model Training
 * Feature Engineering
-* Model Deployment using Streamlit
+* Building Interactive Data Apps
 
 ---
 
@@ -181,15 +173,16 @@ This project demonstrates practical skills in:
 
 **Abhinav Pratap Singh**
 
-Computer Science Student interested in **Data Science, Machine Learning, and AI development**.
+Computer Science student interested in **Data Science, Machine Learning, and AI development**.
 
 ---
 
 # ⭐ Future Improvements
 
-Possible enhancements to the project:
+Possible future upgrades:
 
-* Use more advanced ML models (Random Forest, XGBoost)
-* Add more features for prediction
+* Add more advanced ML models (Random Forest, XGBoost)
 * Improve dashboard UI
 * Deploy the dashboard online
+* Add more dataset features for prediction
+
