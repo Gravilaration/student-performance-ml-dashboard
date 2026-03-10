@@ -1,5 +1,8 @@
 # Student Performance Analysis and Prediction Dashboard
 
+<img width="1364" height="1404" alt="image" src="https://github.com/user-attachments/assets/0be912b6-372a-4a8c-97e8-0a766e327d22" />
+
+
 This project analyzes student exam performance using **Python, SQL, and Machine Learning**, and provides predictions through an **interactive dashboard**.
 
 ## Features
