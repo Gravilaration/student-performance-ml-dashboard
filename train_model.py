@@ -28,7 +28,7 @@ df["lunch"] = le.fit_transform(df["lunch"])
 df["test preparation course"] = le.fit_transform(df["test preparation course"])
 
 # Features
-X = df[["gender", "lunch", "test preparation course"]]
+X = df[["math score", "reading score", "writing score"]]
 
 # Target
 y = df["performance"]
