@@ -44,6 +44,12 @@ The model predicts whether a student's performance is:
 * ✅ Good Performance
 * ⚠️ Poor Performance
 
+## Model Performance
+
+Algorithm: Logistic Regression
+
+Accuracy: ~70–75%
+
 ### Features Used
 
 * Math Score
