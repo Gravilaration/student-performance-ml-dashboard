@@ -1,0 +1,17 @@
+# Student Performance Analysis and Prediction
+
+This project analyzes student performance using Python, SQL, and Machine Learning.
+
+Features:
+- Data analysis using Pandas
+- Data stored in SQLite database
+- Visualizations using Matplotlib
+- Machine Learning model using Logistic Regression
+- Interactive dashboard using Streamlit
+
+Dataset:
+Student Performance Dataset from Kaggle
+
+Run dashboard:
+
+streamlit run dashboard.py
