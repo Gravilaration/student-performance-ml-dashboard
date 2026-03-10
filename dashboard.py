@@ -7,6 +7,8 @@ import sqlite3
 model = pickle.load(open("models/student_model.pkl", "rb"))
 
 st.title("🎓 Student Performance Prediction")
+
+# Load dataset
 conn = sqlite3.connect("database/students.db")
 df = pd.read_sql("SELECT * FROM students", conn)
 
@@ -15,23 +17,18 @@ st.subheader("Dataset Overview")
 st.write("Average Scores")
 st.write(df[["math score","reading score","writing score"]].mean())
 
-st.write("Enter student details to predict performance.")
+st.write("Enter student scores to predict performance.")
 
 # User Inputs
-gender = st.selectbox("Gender", ["Male", "Female"])
-lunch = st.selectbox("Lunch Type", ["Standard", "Free/Reduced"])
-test_prep = st.selectbox("Test Preparation", ["None", "Completed"])
-
-# Encoding (same as training)
-gender_val = 1 if gender == "Male" else 0
-lunch_val = 1 if lunch == "Standard" else 0
-prep_val = 1 if test_prep == "Completed" else 0
+math_score = st.slider("Math Score", 0, 100, 50)
+reading_score = st.slider("Reading Score", 0, 100, 50)
+writing_score = st.slider("Writing Score", 0, 100, 50)
 
 # Prediction button
 if st.button("Predict Performance"):
 
-    data = pd.DataFrame([[gender_val, lunch_val, prep_val]],
-                        columns=["gender", "lunch", "test preparation course"])
+    data = pd.DataFrame([[math_score, reading_score, writing_score]],
+                        columns=["math score", "reading score", "writing score"])
 
     prediction = model.predict(data)[0]
 
