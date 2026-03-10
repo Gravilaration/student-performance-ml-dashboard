@@ -1,0 +1,49 @@
+# Student Performance Analysis and Prediction Dashboard
+
+This project analyzes student exam performance using **Python, SQL, and Machine Learning**, and provides predictions through an **interactive dashboard**.
+
+## Features
+
+* Data analysis using **Pandas**
+* Data stored in **SQLite database**
+* Visualizations using **Matplotlib**
+* Machine Learning model using **Logistic Regression**
+* Interactive dashboard using **Streamlit**
+
+## Dataset
+
+Student Performance Dataset from Kaggle.
+
+## Tech Stack
+
+* Python
+* Pandas
+* Scikit-Learn
+* SQLite
+* Matplotlib
+* Streamlit
+
+## How to Run
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run dashboard:
+
+streamlit run dashboard.py
+
+## Project Structure
+
+student-performance-dashboard
+│
+├── data/
+├── database/
+├── models/
+├── analysis.py
+├── train_model.py
+├── dashboard.py
+
+## Author
+
+Abhinav Pratap Singh
