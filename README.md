@@ -1,5 +1,7 @@
 #**🎓 Student Performance ML Dashboard**
 
+## Dashboard Preview
+
 <img width="1298" height="1249" alt="image" src="https://github.com/user-attachments/assets/567676a0-4529-49bb-b0c9-194c5906b413" />
 
 <img width="1173" height="1373" alt="image" src="https://github.com/user-attachments/assets/02306b85-1831-4d70-a907-d2ce3882bcd9" />
